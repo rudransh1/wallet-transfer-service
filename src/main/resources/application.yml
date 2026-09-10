@@ -27,4 +27,5 @@ management:
       percentiles-histogram:
         http.server.requests: true
 server:
+  port: ${PORT:8080}
   shutdown: graceful

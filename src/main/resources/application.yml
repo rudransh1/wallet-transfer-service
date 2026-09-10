@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: wallet-transfer-service
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/wallet}
+    username: ${DATABASE_USERNAME:wallet}
+    password: ${DATABASE_PASSWORD:wallet}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+server:
+  shutdown: graceful

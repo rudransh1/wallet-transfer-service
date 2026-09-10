@@ -4,10 +4,10 @@ Wallet & P2P transfer API — concurrent-safe balances, exactly-once transfers, 
 
 Money is integer paise only. Auth: `Authorization: Bearer <user-id>`.
 
-**Live URL:** _add after deploy_  
+**Live URL:** https://wallet-transfer-service-nooq.onrender.com  
 **Repo:** https://github.com/rudransh1/wallet-transfer-service  
 **Logs:** https://drive.google.com/file/d/1O1IicXbKtFe0gzxUZlGD0Qb8SI7DmoCZ/view?usp=sharing  
-**Burst:** `python3 scripts/burst.py <BASE_URL>`
+**Burst:** `python3 scripts/burst.py https://wallet-transfer-service-nooq.onrender.com`
 
 ## Run locally
 
@@ -69,7 +69,7 @@ Local compose uses host port **8081** so it does not clash with a JAR on 8080. I
 | Burst script | Done | `scripts/burst.py` |
 | This write-up | Done | this page |
 | Public repo | Done | https://github.com/rudransh1/wallet-transfer-service |
-| Live URL | You | deploy the image + managed Postgres (Render is the least friction) → send `https://….onrender.com` |
+| Live URL | Done | https://wallet-transfer-service-nooq.onrender.com |
 | Public logs | Done | https://drive.google.com/file/d/1O1IicXbKtFe0gzxUZlGD0Qb8SI7DmoCZ/view?usp=sharing |
 
 ### Public repo
